@@ -1,0 +1,7 @@
+1. Iterative Deepening Se ejecuta alpha-beta con profundidad 1, luego 2, luego 3, y así sucesivamente hasta que se acabe el tiempo. 
+La ventaja es que siempre se tiene disponible una mejor jugada parcial. 
+
+2. Uso de timeout Se puede correr el algoritmo y pararlo al llegar a 1 segundo, devolviendo la mejor jugada encontrada hasta ese momento. 
+Esto funciona bien con minimax y especialmente con MCTS, ya que este último mejora con el tiempo. 
+
+3. MCTS con límite de tiempo En lugar de fijar un número de iteraciones, se puede usar un ciclo que ejecute simulaciones mientras no se supere 1 segundo.
